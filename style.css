@@ -224,9 +224,8 @@ h2 {
 .slides {
     position: relative;
     display: block;
-    height: 100vh;
+    height: 40vh;
     width: 100%;
-
     transition: background 1s cubic-bezier(0.99, 1, 0.92, 1);
 }
 .is-sliding .slides {
@@ -895,6 +894,15 @@ footer {
     }
 }
 @media only screen and (max-width: 992px) {
+    .page {
+        height: 65vh;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 300px;
+    }
     .container {
         max-width: 550px;
     }
@@ -903,7 +911,7 @@ footer {
         align-items: baseline;
     }
     .slides {
-        height: 80vh;
+        height: 40vh;
         width: 79%;
     }
     .slides-nav {
