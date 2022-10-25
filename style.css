@@ -979,10 +979,10 @@ footer {
         flex-direction: column;
         align-items: baseline;
     }
-    .slides {
-        height: 80vh;
-        width: 79%;
-    }
+    /*.slides {*/
+    /*    height: 80vh;*/
+    /*    width: 79%;*/
+    /*}*/
     .slides-nav {
         right: 32px;
     }
