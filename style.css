@@ -1,7 +1,7 @@
 html {
     scroll-behavior: smooth;
     font-family: sans-serif;
-    /*cursor: none;*/
+    cursor: none !important;
     overflow-x: hidden;
 }
 body {
@@ -77,29 +77,29 @@ h2 {
 /*    height: 100%; }*/
 
 .view {
-    position: fixed;
-    top: 450px;
-    right: 200px;
-    bottom: 0;
-    perspective: 400px;
-    width: 100px;
-    height: 100px;
-    z-index: 999;
-    /*width: 1em;*/
-    /*height: 1em;*/
-    border-radius: 50%;
-    pointer-events: none;
-    transform: translate(-50%, -50%);
-    display: none;
+    /*position: fixed;*/
+    /*top: 450px;*/
+    /*right: 200px;*/
+    /*bottom: 0;*/
+    /*perspective: 400px;*/
+    /*width: 100px;*/
+    /*height: 100px;*/
+    /*z-index: 999;*/
+    /*!*width: 1em;*!*/
+    /*!*height: 1em;*!*/
+    /*border-radius: 50%;*/
+    /*pointer-events: none;*/
+    /*transform: translate(-50%, -50%);*/
+    /*display: block;*/
 }
 .view:before {
-    content: "";
-    position: absolute;
-    width: 36px;
-    height: 36px;
-    opacity: 0.2;
-    transform: translate(-30%, -30%);
-    border-radius: 50%;
+    /*content: "";*/
+    /*position: absolute;*/
+    /*width: 36px;*/
+    /*height: 36px;*/
+    /*opacity: 0.2;*/
+    /*transform: translate(-30%, -30%);*/
+    /*border-radius: 50%;*/
 }
 
 .plane {
@@ -853,6 +853,42 @@ footer {
     }
 }
 
+
+#pointer-dot {
+    left: -60px;
+    top: 0;
+    width: 0;
+    height: 0;
+    border: 2.5px solid white;
+    position: fixed;
+    border-radius: 4px;
+    z-index: 101;
+    pointer-events: none;
+    transition: border-color 0.5s;
+}
+
+#pointer-ring {
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 0;
+    padding: 15px;
+    border: 2px solid #ffffff;
+    position: fixed;
+    border-radius: 100px;
+    z-index: 102;
+    pointer-events: none;
+    background: #07658c;
+    box-shadow:
+    0 0 7px #07658c,
+    0 0 10px #07658c,
+    0 0 21px #07658c,
+    0 0 42px#6e95b2,
+    0 0 82px #6e95b2,
+    0 0 92px #6e95b2,
+    0 0 102px #6e95b2,
+    0 0 151px #6e95b2;
+}
 @media (max-width: 767px) {
     .typing-text {
         font-size: 8vw;
